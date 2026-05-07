@@ -1,0 +1,62 @@
+[
+  {
+    "ID": 1,
+    "Address": "Via della flotta n.1",
+    "City": "Taranto 1",
+    "ZipCode": "74021"
+  },
+  {
+    "ID": 2,
+    "Address": "Via della flotta n.2",
+    "City": "Taranto 2",
+    "ZipCode": "74121"
+  },
+  {
+    "ID": 3,
+    "Address": "Via della flotta n.3",
+    "City": "Taranto 3",
+    "ZipCode": "74221"
+  },
+  {
+    "ID": 4,
+    "Address": "Via della flotta n.4",
+    "City": "Taranto 4",
+    "ZipCode": "74321"
+  },
+  {
+    "ID": 5,
+    "Address": "Via della flotta n.5",
+    "City": "Taranto 5",
+    "ZipCode": "74421"
+  },
+  {
+    "ID": 6,
+    "Address": "Via della flotta n.6",
+    "City": "Taranto 6",
+    "ZipCode": "74521"
+  },
+  {
+    "ID": 7,
+    "Address": "Via della flotta n.7",
+    "City": "Taranto 7",
+    "ZipCode": "74621"
+  },
+  {
+    "ID": 8,
+    "Address": "Via della flotta n.8",
+    "City": "Taranto 8",
+    "ZipCode": "74721"
+  },
+  {
+    "ID": 9,
+    "Address": "Via della flotta n.9",
+    "City": "Taranto 9",
+    "ZipCode": "74821"
+  },
+  {
+    "ID": 10,
+    "Address": "Via della flotta n.10",
+    "City": "Taranto 10",
+    "ZipCode": "74921"
+  }
+]
