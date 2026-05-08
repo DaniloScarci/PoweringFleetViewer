@@ -38,17 +38,15 @@ const VehiclesList = ({
   const filteredItems = useMemo(
     () =>
       data && data?.length > 0
-        ? data
-            ?.filter((vehicle: VehicleType) =>
-              vehicleFilter?.length >= 3
-                ? vehicle?.Plate?.toLocaleLowerCase()?.includes(
-                    vehicleFilter?.toLocaleLowerCase(),
-                  )
-                : true,
-            )
-            ?.slice((page - 1) * ITEMS_PER_PAGE, page * ITEMS_PER_PAGE)
+        ? data?.filter((vehicle: VehicleType) =>
+            vehicleFilter?.length >= 3
+              ? vehicle?.Plate?.toLocaleLowerCase()?.includes(
+                  vehicleFilter?.toLocaleLowerCase(),
+                )
+              : true,
+          )
         : [],
-    [selectedFleet, vehicleFilter, data],
+    [vehicleFilter, data],
   );
 
   const shownItems: VehicleType[] = useMemo(
@@ -59,8 +57,9 @@ const VehiclesList = ({
             page * ITEMS_PER_PAGE,
           )
         : [],
-    [vehicleFilter, filteredItems, page],
+    [filteredItems, page],
   );
+
 
   return (
     <VehiclesListContainer>

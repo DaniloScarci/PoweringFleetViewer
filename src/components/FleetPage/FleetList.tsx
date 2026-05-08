@@ -34,19 +34,17 @@ const FleetList = ({
   const filteredItems = useMemo(
     () =>
       data && data?.length > 0
-        ? data
-            ?.filter((fleet: FleetType) =>
-              fleetFilter?.length >= 3
-                ? [
-                    fleet?.City?.toLocaleLowerCase(),
-                    fleet?.Address?.toLocaleLowerCase(),
-                    fleet?.ZipCode?.toLocaleLowerCase(),
-                  ].some((item) =>
-                    item?.includes(fleetFilter?.toLocaleLowerCase()),
-                  )
-                : true,
-            )
-            ?.slice((page - 1) * ITEMS_PER_PAGE, page * ITEMS_PER_PAGE)
+        ? data?.filter((fleet: FleetType) =>
+            fleetFilter?.length >= 3
+              ? [
+                  fleet?.City?.toLocaleLowerCase(),
+                  fleet?.Address?.toLocaleLowerCase(),
+                  fleet?.ZipCode?.toLocaleLowerCase(),
+                ].some((item) =>
+                  item?.includes(fleetFilter?.toLocaleLowerCase()),
+                )
+              : true,
+          )
         : [],
     [fleetFilter, data],
   );
